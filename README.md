@@ -7,16 +7,11 @@
 ### 这是一个链接 [老登教程](https://www.runoob.com)<img src="http://static.runoob.com/images/runoob-logo.png" width="10%">
 ***
 ## 这是你<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.puchedu.cn%2Fuploads%2F1%2F26%2F2876063664%2F1359301885.jpg&refer=http%3A%2F%2Fimg.puchedu.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653310614&t=f4dbc20484fc8a2c04c1971ef5ed5bb1" width="3%">
-$$
-\begin{Bmatrix}
-   a & b \\
-   c & d
-\end{Bmatrix}
-$$
-$$
-\begin{CD}
-   A @>a>> B \\
-@VbVV @AAcA \\
-   C @= D
-\end{CD}
-$$
+```mermaid
+graph LR
+A[方形] -->B(圆角)
+    B --> C{条件a}
+    C -->|a=1| D[结果1]
+    C -->|a=2| E[结果2]
+    F[横向流程图]
+```
